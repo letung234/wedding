@@ -11,6 +11,7 @@ import { MusicPlayer } from '@/components/demo/MusicPlayer'
 import { CountdownTimer } from '@/components/demo/CountdownTimer'
 import { About } from '@/components/demo/About'
 import { Footer } from '@/components/demo/Footer'
+import { PhotoGallery } from './components/demo/PhotoGallery'
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -39,13 +40,14 @@ export default function App() {
       <main className="container mx-auto px-4 space-y-12 mt-10">
         <Carousel />
         <About />
-        <CountdownTimer targetDate={new Date('2024-09-18T00:00:00')} />
+        <CountdownTimer targetDate={new Date('2024-09-30T00:00:00')} />
         <EventDetails />
         <LocationMap />
-        <CommentSection />
+        <PhotoGallery />
         {/* <DonationSection />
         <BankAccounts /> */}
         <VideoSection />
+        <CommentSection />
       </main>
       <Footer />
       <MusicPlayer />
