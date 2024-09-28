@@ -27,8 +27,7 @@ export function VideoSection() {
                         </div>
                     </DialogTrigger >
 
-                    {/* Modal untuk menampilkan video */}
-                    <DialogContent DialogContent className="bg-white p-0 rounded-lg shadow-lg" >
+                    <DialogContent className="bg-white p-0 rounded-lg shadow-lg" >
                         <div className="aspect-w-16 aspect-h-10">
                             <iframe
                                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -38,7 +37,7 @@ export function VideoSection() {
                                 className="w-full h-full rounded-lg"
                             ></iframe>
                         </div>
-                    </DialogContent >
+                    </DialogContent>
                 </Dialog >
             </div >
         </section >

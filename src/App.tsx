@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Navbar } from '@/components/demo/Navbar'
 import { Carousel } from '@/components/demo/Carousel'
-import { VideoSection } from '@/components/demo/VideoSection'
 import { EventDetails } from '@/components/demo/EventDetails'
-import { LocationMap } from '@/components/demo/LocationMap'
 import { CommentSection } from '@/components/demo/CommentSection'
 import { DonationSection } from '@/components/demo/DonationSection'
 import { BankAccounts } from '@/components/demo/BankAccounts'
@@ -12,7 +10,6 @@ import { CountdownTimer } from '@/components/demo/CountdownTimer'
 import { About } from '@/components/demo/About'
 import { Footer } from '@/components/demo/Footer'
 import { PhotoGallery } from './components/demo/PhotoGallery'
-import { bg } from './assets'
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false)
