@@ -87,7 +87,7 @@ export function PhotoGallery() {
                 </motion.h2>
 
                 <Tabs defaultValue="all" className="mb-8">
-                    <TabsList className="grid w-full grid-cols-4 lg:w-[400px] mx-auto">
+                    <TabsList className="grid w-full grid-cols-4 space-x-1 lg:w-[400px] mx-auto">
                         {categories.map(category => (
                             <TabsTrigger
                                 key={category}

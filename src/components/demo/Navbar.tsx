@@ -32,7 +32,7 @@ export function Navbar() {
     }, [])
 
     return (
-        <nav className={`w-full bg-background pt-4 pb-1 md:pb-4 ${isScrolled
+        <nav className={`w-full bg-background pt-4 pb-0 md:pb-4 ${isScrolled
             ? "fixed top-0 left-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
             : ""
             } transition-all duration-200 ease-in-out`}>

@@ -47,7 +47,7 @@ export function MusicPlayer() {
     const toggleMute = () => setIsMuted(!isMuted)
 
     return (
-        <div className="fixed bottom-5 right-5 p-3 rounded-lg flex items-center space-x-4">
+        <div className="fixed bottom-2 right-2 p-3 rounded-lg flex items-center space-x-4">
             {/* Audio element */}
             <audio ref={audioRef} loop>
                 <source src={audio} type="audio/mpeg" />
