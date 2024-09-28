@@ -1,7 +1,7 @@
 import { QRCodeSVG } from 'qrcode.react'
 
 export function DonationSection() {
-    const qrisData = "00020101021226580014COM.MIDTRANS.WWW011893600914123456789002152031234567890303UMI51440014ID.CO.QRIS.WWW0215ID10200000000310303UMI5204481453033605405100005802ID5913MIDTRANS TEST6013JAKARTA PUSAT61051234562070703A016304A1BC"
+    const qrisData = "Rizki Tampan sekali "
 
     return (
         <section id="donate" className="py-12">
@@ -9,7 +9,7 @@ export function DonationSection() {
             <div className="flex justify-center">
                 <QRCodeSVG value={qrisData} size={256} />
             </div>
-            <p className="text-center mt-4">Scan the QR code to donate</p>
+            <p className="text-center mt-4">Scan the QR code to yyour support ❤️</p>
         </section>
     )
 }

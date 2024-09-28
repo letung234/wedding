@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { satu, dua, sembilan } from '@/assets'
 
 const images = [
-    'https://blog.sribu.com/wp-content/uploads/2024/06/pexels-minan1398-752842.jpg?fit=774%2C434&ssl=1',
-    'https://kontenesia.com/wp-content/uploads/2022/03/life-863708_1920.jpg',
-    'https://d1hjkbq40fs2x4.cloudfront.net/2021-04-28/files/01_-_HERO.jpg',
+    satu,
+    dua,
+    sembilan,
 ]
 
 export function Carousel() {
@@ -50,7 +51,7 @@ export function Carousel() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                    24 September 2024
+                    24 September 2100
                 </motion.p>
             </div>
             <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">

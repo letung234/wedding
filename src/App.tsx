@@ -12,6 +12,7 @@ import { CountdownTimer } from '@/components/demo/CountdownTimer'
 import { About } from '@/components/demo/About'
 import { Footer } from '@/components/demo/Footer'
 import { PhotoGallery } from './components/demo/PhotoGallery'
+import { bg } from './assets'
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -30,27 +31,28 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      {/* <header className="py-6 text-center">
-        <h1 className="text-4xl font-bold">John & Jane's Wedding</h1>
-        <p className="text-xl mt-2">We're getting married!</p>
-      </header> */}
+    <div className=" min-h-screen text-foreground">
+      {/* Background Image */}
 
-      <main className="container mx-auto px-4 space-y-12 mt-10">
+
+      {/* Content Layer */}
+      <header >
+        <Navbar />
+      </header>
+      <main className="z-50 container mx-auto px-4 space-y-12 mt-10">
         <Carousel />
         <About />
-        <CountdownTimer targetDate={new Date('2024-09-30T00:00:00')} />
+        <CountdownTimer targetDate={new Date('2024-10-30T00:00:00')} />
         <EventDetails />
-        <LocationMap />
-        <PhotoGallery />
-        {/* <DonationSection />
-        <BankAccounts /> */}
-        <VideoSection />
         <CommentSection />
+        <PhotoGallery />
+        <DonationSection />
+        <BankAccounts />
+        {/* <VideoSection /> */}
       </main>
       <Footer />
       <MusicPlayer />
     </div>
+
   )
 }
