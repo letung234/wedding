@@ -10,7 +10,7 @@ import { CountdownTimer } from '@/components/demo/CountdownTimer'
 import { About } from '@/components/demo/About'
 import { Footer } from '@/components/demo/Footer'
 import { PhotoGallery } from './components/demo/PhotoGallery'
-
+import "./App.css"
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -29,9 +29,6 @@ export default function App() {
 
   return (
     <div className=" min-h-screen text-foreground">
-      {/* Background Image */}
-
-
       {/* Content Layer */}
       <header >
         <Navbar />
@@ -39,7 +36,7 @@ export default function App() {
       <main className="z-50 container mx-auto px-4 space-y-12 mt-10">
         <Carousel />
         <About />
-        <CountdownTimer targetDate={new Date('2024-10-30T00:00:00')} />
+        <CountdownTimer targetDate={new Date('2024-11-10T00:00:00')} />
         <EventDetails />
         <CommentSection />
         <PhotoGallery />

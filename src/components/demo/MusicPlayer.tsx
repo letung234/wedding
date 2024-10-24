@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Button } from "@/components/ui/button"
 import { Volume2, VolumeX, Pause, Play } from 'lucide-react'
 import { motion } from 'framer-motion'
-import audio from "../../assets/audio/audio.mp3"
+import audio from "../../assets/audio/audio1.mp3"
 
 export function MusicPlayer() {
     const [isPlaying, setIsPlaying] = useState(false) // Default: tidak autoplay
@@ -63,8 +63,8 @@ export function MusicPlayer() {
                     transition={{ duration: 3.5, delay: 2 }}
                     className="text-left bg-white border rounded-md px-4"
                 >
-                    <p className="text-sm font-bold">Instrumental Romantic</p>
-                    <p className="text-xs text-gray-600">Jazz Music</p>
+                    <p className="text-sm font-bold"> Lagu Pernikahan Kita </p>
+                    <p className="text-xs text-gray-600">Tiara Andini, Arsy Widianto</p>
                 </motion.div>
 
             )}

@@ -51,7 +51,7 @@ export function About() {
                             <circle cx="50" cy="50" r="49" fill="none" stroke="currentColor" strokeWidth="1" />
                         </svg>
                     </div>
-                    <h3 className="text-2xl font-secondary mt-4">Istri</h3>
+                    <h3 className="text-2xl font-secondary mt-4">Rima</h3>
                 </div>
             </div>
         </section>

@@ -51,7 +51,7 @@ export function Carousel() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                    24 September 2100
+                    10 October 2024
                 </motion.p>
             </div>
             <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
