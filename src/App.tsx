@@ -11,6 +11,7 @@ import { About } from '@/components/demo/About'
 import { Footer } from '@/components/demo/Footer'
 import { PhotoGallery } from './components/demo/PhotoGallery'
 import "./App.css"
+import { Loading } from './components/demo/Loading'
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -21,9 +22,7 @@ export default function App() {
 
   if (!isLoaded) {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
-      </div>
+      <Loading />
     )
   }
 

@@ -1,6 +1,5 @@
 import { irfan, is2 } from "@/assets"
 
-
 export function About() {
     return (
         <section id="about" className="py-12 font-primary">
