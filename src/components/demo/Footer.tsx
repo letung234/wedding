@@ -15,10 +15,10 @@ export function Footer() {
                     </div>
                     <div className="flex flex-col items-center mt-4  md:mt-0">
                         <p>&copy; 20244 Irfan & Rima Wedding</p>
-                        <p className="mt-2">Website by @mochrks</p>
+                        <p>Created by 🚀<a href="https://www.github.com/mochrks" target="_blank" rel="noopener noreferrer" className="hover:underline">@mochrks</a>.</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }
