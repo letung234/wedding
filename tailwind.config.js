@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-	darkMode: ["class"], // Kích hoạt chế độ dark mode theo class
+export default {
+	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx,jsx}",
 		"./components/**/*.{ts,tsx,jsx}",
@@ -9,7 +9,7 @@ module.exports = {
 	],
 	theme: {
 		container: {
-			center: true, // Đảm bảo giá trị là kiểu boolean, không cần chuỗi
+			center: true,
 			padding: "2rem",
 			screens: {
 				"2xl": "1400px",
@@ -87,5 +87,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")], // Đảm bảo gói plugin này đã được cài đặt
+	plugins: [require("tailwindcss-animate")],
 };
