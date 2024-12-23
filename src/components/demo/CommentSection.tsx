@@ -92,34 +92,34 @@ export function CommentSection() {
                     {toast.message}
                 </div>
             )}
-            <h2 className="text-3xl font-bold text-center mb-6">Comments Section</h2>
+            <h2 className="text-3xl font-bold text-center mb-6">Gửi Lời Yêu Thương</h2>
             <div className="flex flex-col md:flex-row gap-6">
                 <Card className="flex-1 md:order-2">
                     <CardHeader>
-                        <h3 className="text-xl font-semibold">Leave a Comment</h3>
+                        <h3 className="text-xl font-semibold">Để lại lời yêu thương</h3>
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <Input
                                 type="text"
-                                placeholder="Your Name"
+                                placeholder="Tên của bạn"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 required
                             />
                             <Textarea
-                                placeholder="Your Comment"
+                                placeholder="Lời yêu thương"
                                 value={comment}
                                 onChange={(e) => setComment(e.target.value)}
                                 required
                             />
-                            <Button type="submit" className="w-full">Submit Comment</Button>
+                            <Button type="submit" className="w-full">Gửi</Button>
                         </form>
                     </CardContent>
                 </Card>
                 <Card className="flex-1 md:order-1">
                     <CardHeader>
-                        <h3 className="text-xl font-semibold">Comments</h3>
+                        <h3 className="text-xl font-semibold">Lời yêu thương</h3>
                     </CardHeader>
                     <CardContent>
                         <ScrollArea className="h-[400px] md:h-[200px]">

@@ -4,7 +4,7 @@ import { Carousel } from '@/components/demo/Carousel'
 import { EventDetails } from '@/components/demo/EventDetails'
 import { CommentSection } from '@/components/demo/CommentSection'
 import { DonationSection } from '@/components/demo/DonationSection'
-import { BankAccounts } from '@/components/demo/BankAccounts'
+// import { BankAccounts } from '@/components/demo/BankAccounts'
 import { MusicPlayer } from '@/components/demo/MusicPlayer'
 import { CountdownTimer } from '@/components/demo/CountdownTimer'
 import { About } from '@/components/demo/About'
@@ -35,12 +35,12 @@ export default function App() {
       <main className="z-50 container mx-auto px-4 space-y-12 mt-10">
         <Carousel />
         <About />
-        <CountdownTimer targetDate={new Date('2024-11-10T00:00:00')} />
+        <CountdownTimer targetDate={new Date('2025-01-01T00:00:00')} />
         <EventDetails />
         <CommentSection />
         <PhotoGallery />
         <DonationSection />
-        <BankAccounts />
+        {/* <BankAccounts /> */}
         {/* <VideoSection /> */}
       </main>
       <Footer />

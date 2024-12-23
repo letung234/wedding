@@ -12,18 +12,18 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
     function calculateTimeLeft() {
         const difference = +targetDate - +new Date()
         let timeLeft = {
-            days: 0,
-            hours: 0,
-            minutes: 0,
-            seconds: 0
+            Ngày: 0,
+            Giờ: 0,
+            Phút: 0,
+            Giây: 0
         }
 
         if (difference > 0) {
             timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60)
+                Ngày: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                Giờ: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                Phút: Math.floor((difference / 1000 / 60) % 60),
+                Giây: Math.floor((difference / 1000) % 60)
             }
         }
 
@@ -56,11 +56,11 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
     ))
 
     return (
-        <section className="py-12 bg-background">
-            <h2 className="text-3xl font-bold text-center mb-6">Save The Date</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                {timerComponents}
-            </div>
-        </section>
-    )
+      <section className="py-12 bg-background">
+        <h2 className="text-3xl font-bold text-center mb-6">Hẹn Ngày Vui</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          {timerComponents}
+        </div>
+      </section>
+    );
 }
